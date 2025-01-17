@@ -48,7 +48,7 @@ if userchoice == "s":
 
     maxNS = maxEW
 
-    while loot_density < 1:
+    while loot_density < 1 or loot_density > 10:
         try:
             loot_density = int(input("Loot density from 1 to 10 or 0 to exit: "))
         except ValueError:
